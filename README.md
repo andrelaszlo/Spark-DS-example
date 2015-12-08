@@ -22,9 +22,21 @@ Mac OS X example:
 ```brew install r```
 
 
-2) Install the required python packaged:
+2a) Optionally create a [virtualenv](https://pypi.python.org/pypi/virtualenv)
+
+```virtualenv env```
+
+```source env/bin/activate```
+
+This will make the next step install all needed Python packages in an isolated environment, not affecting the rest of your system.
+
+2b) Install the required python packaged
 
 ```pip install -r requirements.txt```
+
+3a) Create a tmp directory
+
+```mkdir tmp```
 
 3a) Run the following code to execute the spark python script from a terminal:
 
